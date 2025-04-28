@@ -101,7 +101,4 @@ This project is licensed under the **MIT License**. See the https://www.google.c
 
 ---
 
-(Optional) Feel free to add other sections as needed, such as:
-
-- Contribution Guidelines
-- Known Issues or Limitations
+_Generated with assistance from Google Gemini 2.5 Pro ✨_
