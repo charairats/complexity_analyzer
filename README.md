@@ -47,27 +47,27 @@ Examples:
    - Uses the default threshold (10).
    - Generates reports in the complexity/ directory at the project root.
    ```bash
-   run complexity_analyzer:complexity generate
+   dart run complexity_analyzer:complexity generate
    ```
 2. Set a custom threshold:
 
    - Set the maximum acceptable CC score to 15.
 
    ```bash
-   dart run run complexity_analyzer:complexity generate --threshold 15
+   dart run complexity_analyzer:complexity generate --threshold 15
    ```
 
 3. Specify analysis paths:
    - Analyze specific files and directories (e.g., `lib/` and `test/`).
    ```bash
-   dart run run complexity_analyzer:complexity generate --threshold 15
+   dart run complexity_analyzer:complexity generate --threshold 15
    ```
 4. Change the output directory:
 
    - Save the reports to the build/reports/complexity directory instead.
 
    ```bash
-   dart run run complexity_analyzer:complexity generate --output-dir build/reports/complexity
+   dart run complexity_analyzer:complexity generate --output-dir build/reports/complexity
    ```
 
 5. Combine options:
