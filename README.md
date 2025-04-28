@@ -47,38 +47,38 @@ Examples:
    - Uses the default threshold (10).
    - Generates reports in the complexity/ directory at the project root.
    ```bash
-   dart run complexity_analyzer:generate
+   run complexity_analyzer:complexity generate
    ```
 2. Set a custom threshold:
 
    - Set the maximum acceptable CC score to 15.
 
    ```bash
-   dart run complexity_analyzer:generate --threshold 15
+   dart run run complexity_analyzer:complexity generate --threshold 15
    ```
 
 3. Specify analysis paths:
    - Analyze specific files and directories (e.g., `lib/` and `test/`).
    ```bash
-   dart run complexity_analyzer:generate --threshold 15
+   dart run run complexity_analyzer:complexity generate --threshold 15
    ```
 4. Change the output directory:
 
    - Save the reports to the build/reports/complexity directory instead.
 
    ```bash
-   dart run complexity_analyzer:generate --output-dir build/reports/complexity
+   dart run run complexity_analyzer:complexity generate --output-dir build/reports/complexity
    ```
 
 5. Combine options:
 
    ```bash
-   dart run complexity_analyzer:generate --threshold 12 --paths lib bin/my_script.dart --output-dir reports
+   dart run complexity_analyzer:complexity generate --threshold 12 --paths lib/my_code.dart --output-dir reports
    ```
 
 6. View all options:
    ```bash
-   dart run complexity_analyzer:generate --help
+   dart run complexity_analyzer:complexity generate --help
    ```
 
 ## 📊 Output
@@ -87,6 +87,19 @@ Upon successful execution of the `generate` command, report files will be create
 
 - `sonar-report.json`: A JSON file formatted according to the SonarQube Generic Issue Data specification. Use this file to import issues (functions exceeding the complexity threshold) into SonarQube.
 - `report.html`: An HTML file displaying a user-friendly table of functions/methods that exceed the complexity threshold. This file can be opened directly in a web browser.
+
+* **On Windows:**
+    ```bash
+    start complexity\report.html
+    # Or use the path specified with --output-dir
+    start your-output-dir\report.html
+    ```
+* **On macOS:**
+    ```bash
+    open complexity/report.html
+    # Or use the path specified with --output-dir
+    open your-output-dir/report.html
+    ```
 
 ## 🔧 Options for `generate` Command
 

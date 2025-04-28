@@ -1,6 +1,6 @@
 # complexity_analyzer/pubspec.yaml
 name: complexity_analyzer
-description: เครื่องมือวิเคราะห์ Cyclomatic Complexity สำหรับ Dart และสร้างรายงาน
+description: Cyclomatic Complexity Analyzer for Dart
 version: 0.1.0
 environment:
   sdk: ">=3.0.0 <4.0.0"
