@@ -20,7 +20,7 @@ Add `complexity_analyzer` to your `dev_dependencies` in your project's `pubspec.
 dev_dependencies:
   complexity_analyzer:
     git:
-      url: https://your-repo-url/complexity_analyzer.git
+      url: https://github.com/charairats/complexity_analyzer.git
       ref: main
 ```
 
